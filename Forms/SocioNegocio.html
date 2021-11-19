@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+          crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="/JavaScript/SocioNegocio.js"></script>
+
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="consulta mt-2" >
+            <div class="row">
+                <div class="col-4">
+                    <h2>Lista de Socios Negocio</h2>
+                </div>
+                    <div class="container">
+                        <table class="table table-light table-hover table-borderless tabe-condensed">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>NOMBRE</th>
+                                    <th>RAZON_SOCIAL</th>
+                                    <th>DIRECCION</th>
+                                    <th>TIPO_SOCIO</th>
+                                    <th>CONTACTO</th>
+                                    <th>EMAIL</th>
+                                    <th>FECHA_CREADO</th>
+                                    <th>ESTADO</th>
+                                    <th>TELEFONO</th>
+                                </tr>
+                            </thead>
+                            <tbody class="SociosNegocio">
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Agregar Socio Negocio</h2>
+                </div>
+                <div class="col-12">
+                    <form class="SocioNegocio">
+                        <label for="">NOMBRE</label>
+                        <input type="text" id="NOMBRE" class="form-control" placeholder="Ingrese el Nombre">
+                        <label for="">RAZON SOCIAL</label>
+                        <input type="text" id="RAZON_SOCIAL" class="form-control" placeholder="Ingrese la Razon Social">
+                        <label for="">DIRECCION</label>
+                        <input type="text" id="DIRECCION" class="form-control" placeholder="Ingrese la Direccion">
+                        <label for="">TIPO SOCIO</label>
+                        <input type="text" id="TIPO_SOCIO" class="form-control" placeholder="Ingrese el tipo de Socio">
+                        <label for="">CONTACTO</label>
+                        <input type="text" id="CONTACTO" class="form-control" placeholder="Ingrese el Contacto">
+                        <label for="">EMAIL</label>
+                        <input type="text" id="EMAIL" class="form-control" placeholder="Ingrese el e-mail">
+                        <label for="">FECHA CREADO</label>
+                        <input type="text" id="FECHA_CREADO" class="form-control" placeholder="Ingrese la Fecha de Creacion">
+                        <label for="">ESTADO</label>
+                        <input type="text" id="ESTADO" class="form-control" placeholder="Ingrese el Estado">
+                        <label for="">TELEFONO</label>
+                        <input type="text" id="TELEFONO" class="form-control" placeholder="Ingrese el Numero de telefono">
+                        <hr>
+                        <div class="btnagregar">
+                            <input type="submit" id="btn_agregar" onclick="AgregarSociosNegocios()" value ="Agregar Socio Negocio" class="btn btn-success">
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+            crossorigin="anonymous"></script>
+</body>
+</html>
