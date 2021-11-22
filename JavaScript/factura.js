@@ -6,7 +6,7 @@ var UrlDeleteFactura='http://localhost:90/G9_20/Factura/controller/Facturas.php?
 
 $(document).ready(function(){
     CargarFacturas();
-});
+});  
 
 function CargarFacturas(){
    $.ajax({
@@ -73,7 +73,7 @@ function CargarFactura(idfactura){
    var datosfacturas ={
        ID:idfactura
    }
-   var datospedidojson= JSON.stringify(datosfacturas);
+   var datosfacturajson= JSON.stringify(datosfacturas);
 
    $.ajax({
        url: UrlGetUno,
@@ -93,8 +93,8 @@ function CargarFactura(idfactura){
            $('#FECHA_VENCIMIENTO').val(MiItems[0].FECHA_VENCIMIENTO);
            $('#ESTADO').val(MiItems[0].ESTADO);
 
-           var btnactualizar = '<input type="submit" id="btn_actualizar" onclick="ActualizarPedido('+MiItems[0].ID+')"'+
-           'value="Actualizar Pedidos" class="btn btn-primary"></input>';
+           var btnactualizar = '<input type="submit" id="btn_actualizar" onclick="ActualizarFactura('+MiItems[0].ID+')"'+
+           'value="Actualizar Factura" class="btn btn-primary"></input>';
            $('.btnagregar').html(btnactualizar);
        }   
    });
@@ -103,7 +103,7 @@ function CargarFactura(idfactura){
 function ActualizarFactura(idfactura){
    var datosfacturas = {
        ID:idfactura,
-       NUMERO_FACTURA:$('#NUMERO_FACTURA').val(),
+        NUMERO_FACTURA:$('#NUMERO_FACTURA').val(),
         ID_SOCIO:$('#ID_SOCIO').val(),
         FECHA_FACTURA:$('#FECHA_FACTURA').val(),
         DETALLE:$('#DETALLE').val(),
