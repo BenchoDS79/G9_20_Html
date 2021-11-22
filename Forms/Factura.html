@@ -9,7 +9,7 @@
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
      crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/JavaScript/pedidos.js"></script>
+    <script src="/JavaScript/factura.js"></script>
     <link rel="shortcut icon" href="#">
 
     
@@ -41,7 +41,7 @@
                          <th>ESTADO</th>
                       </tr>
                   </thead>
-                  <tbody class="pedidos">
+                  <tbody class="facturas">
                   </tbody>
                </table> 
             </div>
@@ -53,25 +53,25 @@
                 <h3>Agregar Factura</h3>
             </div>
             <div class="col-12">
-                <form class="Pedido">
+                <form class="factura">
                     <label for="">NUMERO FACTURA</label>
                     <input type="text" id="NUMERO_FACTURA" class="form-control" placeholder="Ingrese Numero de Factura">
                     <label for="">ID SOCIO</label>
                     <input type="text" id="ID_SOCIO" class="form-control" placeholder="Ingrese el Id del socio">
                     <label for="">FECHA FACTURA</label>
-                    <input type="date" id="FECHA_FACTURA" class="form-control" placeholder="Ingrese la fecha de factura">
+                    <input type="text" id="FECHA_FACTURA" class="form-control" placeholder="Ingrese la fecha de factura">
                     <label for="">DETALLE</label>
                     <input type="text" id="DETALLE" class="form-control" placeholder="Ingrese Detalle">
                     <label for="">SUB TOTAL</label>
-                    <input type="int" id="SUB_TOTAL" class="form-control" placeholder="Ingrese el Sub Total">
+                    <input type="text" id="SUB_TOTAL" class="form-control" placeholder="Ingrese el Sub Total">
                     <label for="">TOTAL ISV</label>
-                    <input type="int" id="TOTAL_ISV" class="form-control" placeholder="Ingrese el Total ISV">
+                    <input type="text" id="TOTAL_ISV" class="form-control" placeholder="Ingrese el Total ISV">
                     <label for="">TOTAL</label>
-                    <input type="int" id="TOTAL" class="form-control" placeholder="Ingrese el Total">
+                    <input type="text" id="TOTAL" class="form-control" placeholder="Ingrese el Total">
                     <label for="">FECHA VENCIMIENTO</label>
-                    <input type="date" id="FECHA_VENCIMIENTO" class="form-control" placeholder="Ingrese la fecha de vencimiento">
+                    <input type="text" id="FECHA_VENCIMIENTO" class="form-control" placeholder="Ingrese la fecha de vencimiento">
                     <label for="">ESTADO</label>
-                    <input type="int" id="ESTADO" class="form-control" placeholder="Ingrese el estado">
+                    <input type="text" id="ESTADO" class="form-control" placeholder="Ingrese el estado">
                     <hr>
                     <div class="btnagregar">
                         <input type="submit" id="btn_agregar" onclick="AgregarFactura()" value="Agregar Pedido" class="btn btn-success">
