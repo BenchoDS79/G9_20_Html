@@ -1,8 +1,8 @@
-var UrlGetSociosNegocio = 'http://localhost:90/G9_20x/controller/Socios_negocio.php?op=GetSociosNegocio';
-var UrlInsertSocioNegocio = 'http://localhost:90/G9_20x/controller/Socios_negocio.php?op=InsertSocioNegocio';
-var UrlGetSocioNegocio = 'http://localhost:90/G9_20x/controller/Socios_negocio.php?op=GetUno';
-var UrlUpdateSocioNegocio = 'http://localhost:90/G9_20x/controller/Socios_negocio.php?op=UpdateSocioNegocio';
-var UrlDeleteSocioNegocio = 'http://localhost:90/G9_20x/controller/Socios_negocio.php?op=DeleteSocioNegocio';
+var UrlGetSociosNegocio = 'http://localhost:90/G9_20/SociosNegocio/controller/Socios_negocio.php?op=GetSociosNegocio';
+var UrlInsertSocioNegocio = 'http://localhost:90/G9_20/SociosNegocio/controller/Socios_negocio.php?op=InsertSocioNegocio';
+var UrlGetSocioNegocio = 'http://localhost:90/G9_20/SociosNegocio/controller/Socios_negocio.php?op=GetUno';
+var UrlUpdateSocioNegocio = 'http://localhost:90/G9_20/SociosNegocio/controller/Socios_negocio.php?op=UpdateSocioNegocio';
+var UrlDeleteSocioNegocio = 'http://localhost:90/G9_20/SociosNegocio/controller/Socios_negocio.php?op=DeleteSocioNegocio';
 
 
 
