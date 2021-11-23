@@ -100,7 +100,7 @@ function CargarFactura(idfactura){
    });
 }
 
-function ActualizarFactura(idpedido){
+function ActualizarFactura(idfactura){
    var datosfacturas = {
        ID:idfactura,
         NUMERO_FACTURA:$('#NUMERO_FACTURA').val(),
