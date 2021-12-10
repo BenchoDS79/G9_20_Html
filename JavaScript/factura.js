@@ -42,6 +42,7 @@ function CargarFacturas(){
 }
 function AgregarFactura(){
    var datosfacturas={
+    ID: $('#ID').val(),
     NUMERO_FACTURA:$('#NUMERO_FACTURA').val(),
     ID_SOCIO:$('#ID_SOCIO').val(),
     FECHA_FACTURA:$('#FECHA_FACTURA').val(),
