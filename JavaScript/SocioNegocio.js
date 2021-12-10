@@ -59,7 +59,7 @@ function AgregarSociosNegocios(){
     var datosSocioNegociojson= JSON.stringify(datosSocioNegocio);
 
     $.ajax({
-        url:UrlInsertSocioNegocio,
+        url: UrlInsertSocioNegocio,
         type:'POST',
         data:datosSocioNegociojson, 
         datatype:'JSON',

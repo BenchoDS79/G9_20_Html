@@ -34,8 +34,8 @@ function CargarFacturas(){
                '<td>'+
                '<button class="btn btn-outline-danger" onclick="EliminarFactura('+MiItems[i].ID +')">Eliminar</button>'+
                '<td>'+
-               '</tr>';
-               $('.facturas').html(valores);
+            '</tr>';
+            $('.facturas').html(valores);
            }
        }   
    });
@@ -43,15 +43,15 @@ function CargarFacturas(){
 function AgregarFactura(){
    var datosfacturas={
     id: $('#ID').val(),
-    numero_factura:$('#NUMERO_FACTURA').val(),
-    id_socio:$('#ID_SOCIO').val(),
-    fecha_factura:$('#FECHA_FACTURA').val(),
-    detalle:$('#DETALLE').val(),
-    sub_total:$('#SUB_TOTAL').val(),
-    total_isv:$('#TOTAL_ISV').val(),
-    total:$('#TOTAL').val(),
-    fecha_vencimiento:$('#FECHA_VENCIMIENTO').val(),
-    estado:$('#ESTADO').val()
+    numero_factura: $('#NUMERO_FACTURA').val(),
+    id_socio: $('#ID_SOCIO').val(),
+    fecha_factura: $('#FECHA_FACTURA').val(),
+    detalle: $('#DETALLE').val(),
+    sub_total: $('#SUB_TOTAL').val(),
+    total_isv: $('#TOTAL_ISV').val(),
+    total: $('#TOTAL').val(),
+    fecha_vencimiento: $('#FECHA_VENCIMIENTO').val(),
+    estado: $('#ESTADO').val()
    };
    var datosfacturajson= JSON.stringify(datosfacturas);
    
@@ -71,8 +71,8 @@ function AgregarFactura(){
 }
 
 function CargarFactura(idfactura){
-   var datosfacturas ={
-       ID:idfactura
+   var datosfacturas={
+       id:idfactura
    }
    var datosfacturajson= JSON.stringify(datosfacturas);
 

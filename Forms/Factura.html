@@ -17,73 +17,78 @@
 
 
 <body>
-<div class="Container">
-     <div class="Consulta  mt-4">
-          <div class="row">
-               <div class="col-6">
-                   <h3>Nueva Factura</h3>
-               </div>
-          </div>
-        <div class="box-body">
-            <div class="table table-responsive">
-               <table class="table table_hover">
-                  <thead>
-                      <tr>
-                         <th>ID</th>
-                         <th>NUMERO FACTURA</th>
-                         <th>ID SOCIO</th>
-                         <th>FECHA FACTURA</th>
-                         <th>DETALLE</th>
-                         <th>SUB TOTAL</th>
-                         <th>TOTAL ISV</th>
-                         <th>TOTAL</th>
-                         <th>FECHA VENCIMIENTO</th>
-                         <th>ESTADO</th>
-                      </tr>
-                  </thead>
-                  <tbody class="facturas">
-                  </tbody>
-               </table> 
+
+    <div class="Container">
+        <div class="Consulta  mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Nueva Factura</h3>
+                </div>
+            </div>
+            
+            <div class="box-body">
+                <div class="table table-responsive">
+                    <table class="table table_hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NUMERO FACTURA</th>
+                                <th>ID SOCIO</th>
+                                <th>FECHA FACTURA</th>
+                                <th>DETALLE</th>
+                                <th>SUB TOTAL</th>
+                                <th>TOTAL ISV</th>
+                                <th>TOTAL</th>
+                                <th>FECHA VENCIMIENTO</th>
+                                <th>ESTADO</th>
+                            </tr>
+                        </thead>
+                        <tbody class="facturas">
+                        </tbody>
+                    </table> 
+                 </div>
             </div>
         </div>
-     </div>
-     <div class="formulario">
-        <div class="row">
-            <div class="col-12">
-                <h3>Agregar Factura</h3>
-            </div>
-            <div class="col-12">
-                <form class="factura">
-                    <label for="">NUMERO FACTURA</label>
-                    <input type="text" id="NUMERO_FACTURA" class="form-control" placeholder="Ingrese Numero de Factura">
-                    <label for="">ID SOCIO</label>
-                    <input type="text" id="ID_SOCIO" class="form-control" placeholder="Ingrese el Id del socio">
-                    <label for="">FECHA FACTURA</label>
-                    <input type="text" id="FECHA_FACTURA" class="form-control" placeholder="Ingrese la fecha de factura">
-                    <label for="">DETALLE</label>
-                    <input type="text" id="DETALLE" class="form-control" placeholder="Ingrese Detalle">
-                    <label for="">SUB TOTAL</label>
-                    <input type="text" id="SUB_TOTAL" class="form-control" placeholder="Ingrese el Sub Total">
-                    <label for="">TOTAL ISV</label>
-                    <input type="text" id="TOTAL_ISV" class="form-control" placeholder="Ingrese el Total ISV">
-                    <label for="">TOTAL</label>
-                    <input type="text" id="TOTAL" class="form-control" placeholder="Ingrese el Total">
-                    <label for="">FECHA VENCIMIENTO</label>
-                    <input type="text" id="FECHA_VENCIMIENTO" class="form-control" placeholder="Ingrese la fecha de vencimiento">
-                    <label for="">ESTADO</label>
-                    <input type="text" id="ESTADO" class="form-control" placeholder="Ingrese el estado">
-                    <hr>
-                    <div class="btnagregar">
-                        <input type="submit" id="btn_agregar" onclick="AgregarFactura()" value="Agregar Factura" class="btn btn-success">
-                    </div>
-                </form>
+
+        <div class="formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Agregar Factura</h3>
+                </div>
+                <div class="col-12">
+                    <form class="factura">
+                        <label for="">NUMERO FACTURA</label>
+                        <input type="text" id="NUMERO_FACTURA" class="form-control" placeholder="Ingrese Numero de Factura">
+                        <label for="">ID SOCIO</label>
+                        <input type="text" id="ID_SOCIO" class="form-control" placeholder="Ingrese el Id del socio">
+                        <label for="">FECHA FACTURA</label>
+                        <input type="text" id="FECHA_FACTURA" class="form-control" placeholder="Ingrese la fecha de factura">
+                        <label for="">DETALLE</label>
+                        <input type="text" id="DETALLE" class="form-control" placeholder="Ingrese Detalle">
+                        <label for="">SUB TOTAL</label>
+                        <input type="text" id="SUB_TOTAL" class="form-control" placeholder="Ingrese el Sub Total">
+                        <label for="">TOTAL ISV</label>
+                        <input type="text" id="TOTAL_ISV" class="form-control" placeholder="Ingrese el Total ISV">
+                        <label for="">TOTAL</label>
+                        <input type="text" id="TOTAL" class="form-control" placeholder="Ingrese el Total">
+                        <label for="">FECHA VENCIMIENTO</label>
+                        <input type="text" id="FECHA_VENCIMIENTO" class="form-control" placeholder="Ingrese la fecha de vencimiento">
+                        <label for="">ESTADO</label>
+                        <input type="text" id="ESTADO" class="form-control" placeholder="Ingrese el estado">
+                        <hr>
+                        <div class="btnagregar">
+                            <input type="submit" id="btn_agregar" onclick="AgregarFactura()" value="Agregar Factura" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-     </div>
-</div>
+
+
+    </div>
     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+            crossorigin="anonymous"></script>
 </body>
 </html>
